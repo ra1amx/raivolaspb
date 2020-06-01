@@ -15,6 +15,7 @@ $start = false;
 $first = false;
 //echo '<pre>';
 //print_R($arResult);
+//*** Divan 01.06.2020 ***
 ?>
 
 <?foreach($arResult['ITEMS'] as $item):?>

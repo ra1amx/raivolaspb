@@ -1,0 +1,47 @@
+.r-item img {
+    width: 550px;
+
+}
+.r-item {
+    width: 550px;
+    background: #F1F1F1;
+	margin-bottom: 30px;
+	padding:20px 20px 85px 20px;
+overflow:hidden;
+position:relative;
+height: 360px;
+}
+.r-item_title{
+	font-size:18px;
+	font-weight:bold;
+}
+.rooms .r-item a{
+width:100%;
+height:65px;
+background: #E5772B;
+color:#FFF;
+font-weight:bold;
+text-align:center;
+display:block;
+position:absolute;
+bottom:-60px;
+left:0;
+line-height:65px;
+text-transform:uppercase;
+transition: all 0.5s;
+}
+.rooms .r-item a:visited {
+    color: #FFF;
+}
+.r-item:hover a{
+bottom:0;
+transition: all 0.5s;
+}
+
+.r-item .price {
+    position: absolute;
+    background: #e36c1a;
+    padding: 10px;
+    color: #FFF;
+    font-weight: bold;
+}

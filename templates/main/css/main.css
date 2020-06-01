@@ -1,0 +1,767 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+html,body {
+min-width: 1190px;
+	font-family: 'ProximaNovaRegular';
+}
+header{
+	background: #363636;
+	position: fixed;
+	top:0;
+	z-index: 999;
+	width: 100%;
+	
+}
+.container{
+	min-width: 1170px;
+}
+ul.menu{
+	list-style-type: none;
+	padding: 16px 0;
+}
+ul.menu li{
+	display: inline-block;
+	margin-right: 40px;
+}
+ul.menu li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: 'ProximaNovaBold';
+	position: relative;
+	transition:color .5s;
+	
+}
+ul.menu li a:hover,ul.menu li a.active{
+	color:#ff8400;
+	transition:color .5s;
+}
+
+ul.menu li a:after
+{
+	width: 0px;
+	content:'';
+	position: absolute;
+	bottom: 0;
+	left:0;
+	background:#ff8400;
+	height:2px;
+	transition:width .5s;
+}
+ul.menu li a:hover:after,
+ul.menu li a.active:after{
+	width: 100%;
+	transition:width .5s;
+}
+.social {
+    padding: 20px 0;
+}
+.social a{
+	margin-right: 40px;
+}
+.banner{
+	/*height: calc(100vh - 85px);*/
+	z-index: 10;
+	background:url(../img/bg.jpg);
+	color: #ffffff;
+margin-top: 45px;
+max-height: 1200px;
+min-height: 820px;
+position:relative;
+}
+.video-foreground{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -100;
+}
+.video-foreground iframe {
+    width: 100%;
+    height: 100%;
+}
+.phone{
+	font-size: 28px;
+	color: #FFFFFF;
+	font-family: 'ProximaNovaBold';
+}
+.address{
+	font-size: 14px;
+	font-family: 'ProximaNova-Thin';
+	    margin-top: -10px;
+}
+.contacts{
+	margin-top: 40px;
+	text-align: right;
+}
+.logo{
+	text-align: center;
+	margin-top: -66px;
+
+}
+.logo img{
+	opacity: .6;	
+}
+.title{
+	color: #ff8400;
+	font-size: 100px;
+	text-align: center;
+	font-family: 'IntroRustG-Base2Line';
+    line-height: 90px;
+    margin-bottom: 50px;
+}
+h1{
+	text-align: center;
+	font-size: 48px;
+	margin: 0;
+	    margin-top: -40px;
+		font-family: 'ProximaNovaLight';
+}
+.line{
+	height: 3px;
+	width:655px;
+	background:#FFFFFF;
+	display:block;
+	text-align: center;
+	    margin: 0 auto;
+}
+.description{
+	text-align: center;
+	font-size: 18px;
+}
+.center{
+	text-align: center;
+}
+video{
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	left: 0;
+}
+.get{
+	background: #ff8400;
+	padding:5px 10px;
+	font-size: 18px;
+	display:inline-block;
+	margin-top: 20px;
+}
+.icon{
+	text-align: center;
+	margin-top: 35px;
+}
+.icon img{
+height: 70px;
+}
+.icondesc {
+    width: 70%;
+	margin:10px auto 35px; 
+	font-size: 18px;
+}
+.order-button{
+	background: #ff8400;
+	padding:5px 40px;
+	font-size: 18px;
+	text-align: center;
+	display:inline-block;
+	margin: 15px 0;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.menublocks{
+		background: url(../img/bg.jpg) ;
+		overflow: hidden;
+		position: relative;		
+		z-index: 11;
+
+
+
+}
+.menublocks:after{
+    background: url(../img/lettering.png);
+
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.menublocks .container{
+	z-index: 10;
+	position:inherit;
+}
+.title-menu{
+	font-size: 28px;
+		font-family: 'ProximaNovaBold';
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+	margin-top: 70px;
+}
+.menu-block{
+	padding:90px 0 90px;
+	margin-bottom: 130px;
+	overflow:hidden;
+	background:#FFFFFF;
+	position: relative;
+	
+}
+.menu-block:before{
+			background: url(../img/bg2.jpg) ;
+		width: 100%;
+		height:100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content:'' ;
+		opacity: .2
+}
+.linemenublock{
+		border-bottom: 1px solid #171718;
+}
+.sect-list{
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+}
+.sect-list li{
+	width: 100%;
+	font-size: 18px;
+	color: #363636;
+	font-family: 'ProximaNovaBold';
+	text-align: left;
+	padding:15px 0 15px 33.3%;
+	cursor: pointer;
+}
+.sect-list li.active{
+	background:#ff8400;
+}
+.sect-list li:hover{
+background:rgba(255, 132, 0, .2);
+}
+.sect-list li.active:hover{
+	background:#ff8400;
+}
+.item-img{
+	width: 100%;
+}
+.item-info{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	overflow:hidden;
+}
+.weight{
+	font-size: 18px;
+	color: #363636;
+	float: left;
+}
+.price{
+	font-size: 18px;
+	color: #363636;
+	font-family: 'ProximaNovaBold';
+	float: right;
+}
+.slideimg img {
+    width: 100%;
+}
+.item-list{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	display:none;
+}
+.item-list.active{
+	display:block;
+}
+.item-list li {
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	color: #363636;
+	font-family: 'ProximaNovaBold';
+
+	border-top:1px solid rgba(0, 0, 0, .2);
+	border-bottom:1px solid rgba(0, 0, 0, .2); 
+	padding:25px 50px ;
+	position:relative;
+}
+.item-list li.active{
+		background:rgba(255, 132, 0, .2);;
+}
+.item-list li:hover{
+	background:rgba(255, 132, 0, .1);;
+}
+.item-list li .additem{
+	position:absolute;
+	content:'+';
+	color: #FFFFFF;
+	background: #ff8400;
+	border-radius: 50px;
+	width: 30px;
+	height:30px;
+	padding-left: 1px;
+	font-size: 30px;
+	font-family: 'ProximaNovaBlack';
+	line-height: 33px;
+	text-align: center;
+	vertical-align: middle;
+	left: 10px;
+	top:23px;
+	cursor: pointer;
+}
+.order-list{
+	list-style-type: none;
+	padding:0;
+	padding-top: 35px;
+	margin:0;
+
+}
+.order-list li {
+	padding-bottom: 17px;
+	font-size: 18px;
+	color: #363636;
+}
+.itemname{
+	display:inline-block;
+	width: 75%;
+	font-size: 18px;
+	color: #363636;
+}
+.itemprice{
+	width: 18%;
+	font-size: 18px;
+	display:inline-block;
+		color: #363636;
+}
+.delete{
+	width: 5%;
+	display:inline-block;
+	background: #ed1c24;
+	border-radius: 50px;
+	width: 25px;
+	height:25px;
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 24px;
+	cursor: pointer;
+	float:right;
+}
+.order-value{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #363636;
+	        padding-top: 17px;
+    border-top: 1px solid;
+
+}
+.order-value span{
+	float: right;
+	margin-right: 16%;
+	text-transform: lowercase;
+}
+.menu-block .order-button{
+	padding:15px 30px;
+	color: #FFFFFF;
+
+}
+.viewall{
+	background: #ff8400;
+	padding:15px 10px;
+	display:inline-block;
+	margin-top: 35px;
+	color: #FFFFFF;
+	font-size: 18px;
+	cursor: pointer;
+	margin-bottom: 50px;
+		text-transform: uppercase;
+
+}
+.block-text{
+	background:#FFFFFF;
+	padding:16px;
+	color: #363636;
+	font-size: 18px;
+		font-family: 'ProximaNovaLight';
+}
+.block-text p{
+	margin:0;
+	line-height: 30px;
+}
+
+.carousel{
+	min-width: 1170px;
+	background: url(../img/bg.jpg) ;
+
+}
+.carousel-item img{
+	height:100vh;
+	width: 100%;
+}
+.hiddenblock{
+	  overflow:hidden;
+	  padding:0;
+	  width: 100%;
+	  position:fixed;
+	  top:50%;
+	   transition: padding 1s, top 1s;
+	  z-index: 99999;
+}
+.slider{
+	position:absolute;
+  	top:-50vh;
+	z-index: 9999;
+	height:100vh;
+	width: 100%;
+	 transition: padding 1s, top 1s;
+
+}
+.hiddenblock.active{
+    padding: 50vh 0;
+    top:0;
+    transition: padding 1s, top 1s;
+}
+.hiddenblock.active .slider{
+  	top:0px;
+     transition: padding 1s, top 1s;
+}
+.owl-nav{
+	position:absolute;
+	top: 0;
+	left: 0;
+	    width: 100%;
+	    height:100%;
+}
+.owl-nav .next_button{
+    position: absolute;
+    transition: background .5s;
+    width: 20%;
+    text-align: center;
+    height:100%;
+    vertical-align: middle;
+    line-height: 100%;
+	right: 0;
+    position: absolute;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.owl-nav .prev_button{
+    position: absolute;
+    transition: background .5s;
+    width: 20%;
+    text-align: center;
+    height:100%;
+    vertical-align: middle;
+    line-height: 100%;
+	transform: rotate(180deg); 
+	background: rgba(0, 0, 0, 0.1);
+
+}
+.next_button img,.prev_button img{
+	position:absolute;
+	top: calc(50% - 60px);
+		cursor: pointer;
+		height:70px;
+}
+.prev_button:hover,.next_button:hover{
+	background: rgba(0, 0, 0, 0.3);
+	}
+.close{
+	background: url(../img/close.png) no-repeat;
+	margin-left: 20px;
+    font-size: 20px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    padding-left: 40px;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 30px;
+    z-index: 50;
+    cursor: pointer
+}
+.text-image{
+	position:absolute;
+	padding:15px 0;
+	top:50px;
+	text-align: center;
+	color: #FFFFFF;
+	background: rgba(0, 0, 0, 0.3);
+	width: 755px;
+	font-size: 18px;
+	left: calc(50% - 377px);
+}
+.stolovay{
+	background:#FFFFFF;
+	z-index: 15;
+	position: relative;
+	padding: 20px;
+	
+}
+.stolovay:before{
+	background: url(../img/bg2.jpg);
+	top: 0;
+	left:0;
+	width: 100%;
+	height:100%;
+	content:'';
+	position: absolute;
+	opacity: .2;
+}
+.photos{
+	display:none;
+}
+
+.st-title{
+	font-size: 28px;
+	text-align: center;
+	color: #363636;
+	width: 800px;
+	margin:0 auto;
+	font-family: 'ProximaNova-Extrabld';
+}
+.viewphoto{
+font-size: 24px;
+	color: #363636;
+	text-align: center;
+	display:inline-block;
+	position:relative;
+	cursor: pointer;
+}
+
+
+.viewphoto:after{
+	content:'';
+	width: 100%;
+	height:2px;
+	display:inline-block;
+	background: #363636;
+	position:absolute;
+	bottom: 0;
+	left: 0;
+}
+.viewphoto.cl:after{
+		height:1px;
+}
+.stolovay img{
+	width: 100%;
+	margin-top: 30px;
+}
+.team{
+	margin-top: 0px;
+	padding: 150px;
+	position:relative;
+	background: url(../img/iskr.png), url(../img/lettering.png),url(../img/bg.jpg);
+	z-index: 20;
+	text-align: center;
+
+}
+.team img {
+    min-width: 920px;
+	max-width:1170px;
+width: 100%;
+}
+.maps{
+	position: relative;
+	z-index: 27;
+}
+.sing{
+	position: absolute;
+    left: calc(50% - 280px);
+    background: #ff7200;
+    padding: 20px;
+    font-size: 18px;
+    top: 70px;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 560px;
+}
+.sing span{
+	font-size: 28px;
+	color: #434343;
+			font-family: 'ProximaNovaBold';
+}
+.footer{
+		background: #363636;
+z-index: 21;
+position: relative;
+
+		padding: 25px 0;
+
+}
+.footer .logo{
+	float: left;
+	margin-top: 0;
+}
+.footer .logo img{
+	width: 230px;
+}
+.footer .contacts{
+	float: right;
+	margin-top: 0;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: right;
+}
+.footer .contacts a {
+	font-size: 28px;
+	color: #FFFFFF;
+}
+#form, #thanks{
+	width: 500px;
+	height: 400px;
+	position: fixed;
+
+	background-size: cover;
+	top:calc(50% - 200px);
+	left:calc(50% - 250px);
+	padding:40px 80px 20px;
+	
+}
+#form:before, #thanks:before{
+	background: url(../img/bg2.jpg);
+	top: 0;
+	left:0;
+	width: 100%;
+	height:100%;
+	content:'';
+	position: absolute;
+z-index: -1;
+    opacity: 0.3;
+}
+#thanks{
+	height: 200px;
+	top:calc(50% - 100px);
+}
+.thanks {
+    text-align: center;
+    font-size: 17px;
+}
+#thanks svg{
+opacity:0;
+}
+#form label, #promocode label{
+	font-size: 18px;
+	font-family: 'ProximaNovaBold';
+	color: #636363;
+	margin-bottom: 7px;
+	display: block;
+}
+#form input[type=text], #promocode input[type=text]{
+	border:2px solid #636363;
+	width: 100%;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+#form .close, #thanks .close, #politic .close,
+#promocode .close
+{
+	top: 0px;
+    right: 0;
+    background-color: #ff8400;
+    padding: 25px;
+    background-position: center;
+
+}
+#form  .checkbox,
+#promocode .checkbox{
+	width: 250px;
+	margin: 0 auto;
+	font-family: 'ProximaNovaLight';
+	margin-top: 15px;
+}
+#form  .checkbox input,
+##promocode .checkbox input{
+	float: left;
+	display: inline-block;
+	
+	
+}
+#form  .checkbox span,
+#promocode .checkbox span{
+display: inline-block;
+    float: left;
+    width: 230px;
+    line-height: 14px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+#form .order-button,
+#promocode .order-button{
+	color: #FFFFFF;
+    margin: 25px 0;
+	border:none;
+}
+#promocode .title {
+    color: #ff8400;
+    font-size: 20px;
+   font-family: 'ProximaNovaBold';
+}
+select {
+    border: 2px solid #636363;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.politic {
+    float: left;
+    width: 630px;
+    text-align: center;
+    margin-top: 50px;
+}
+.politic a{
+text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'ProximaNovaBold';
+    position: relative;
+    transition: color .5s;
+}
+.politic a:hover{
+    color: #ff8400;
+    transition: color .5s;
+}
+#politic{
+	width: 900px;
+	height: calc(100% - 160px);
+	position: fixed;
+
+	background-size: cover;
+	top:calc(50% - ((100% - 160px) / 2));
+	left:calc(50% - 450px);
+	padding:40px 80px 20px;
+	overflow:hidden;
+	
+}
+#politic .pol {
+    overflow-y: scroll;
+    height: 100%;
+	    padding-top: 23px;
+}

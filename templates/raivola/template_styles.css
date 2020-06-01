@@ -1,0 +1,158 @@
+.content .img {
+    margin-right: 20px;
+}
+.content {
+    flex-wrap: nowrap;
+}
+
+.conferenc-gall .owl-item {
+    display: inline-block;
+height: 180px;
+    overflow: hidden;
+}
+.owl-nav.disabled{
+display:none;
+}
+a.messdir {
+    position: absolute;
+    bottom: 60px;
+    right: 90px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: inherit;
+}
+
+
+.popUp {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+}
+.popUp_wrap {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    /* overflow: auto; */
+    padding: 32px 0px;
+    box-sizing: border-box;
+}
+.popUp_content {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding: 40px 64px;
+    box-shadow: 0px 56px 40px -32px rgba(0, 0, 0, 0.24);
+    font-size: 14px;
+    color: rgba(46, 46, 46, 0.80);
+}
+.popUp_shade {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(31, 33, 37, 0.48);
+}
+.form__title{
+ 
+    font-size: 24px;
+    line-height: 32px;
+    color: #1F2125;
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.popUp .feedBaclFrom {
+    max-width: 320px;
+}
+.popUp .feedBaclFrom label{
+			font-weight:bold;
+}
+.popUp .feedBaclFrom .formInput,
+.popUp .feedBaclFrom textarea{
+    width: 100%;
+    height: 36px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    border: 1px solid #EDE8E4;
+    color: #1F2125;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    background-position: 24px center;
+    outline: none;
+    transition: all ease 0.32s;
+}
+.popUp .feedBaclFrom textarea {
+    height: 140px;
+    resize: none;
+}
+label.checkbox{
+	max-width: 320px;
+
+}
+.text {
+    max-width: 280px;
+display: inline-block;
+font-size: 12px;
+}
+button.feedback.btn.btn-success.fillBTN.XL,
+.fillBTN.L.closePopUp_link{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E64D1F;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+img.closePopUp {
+    padding: 0px;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    cursor: pointer;
+    transition: all ease 0.25s;
+    opacity: 1;
+}
+img.closePopUp:hover {
+    opacity: 0.32;
+}
+div#thanks {
+    background: none;
+}
+.button-cont {
+    text-align: center;
+    margin-top: 95px;
+    width: 420px;
+    margin: 95px auto 0;
+}
+.button-cont a:hover {
+    box-shadow: inset 0px 0px 0px 2px white;
+    transition: all ease 0.32s;
+    background: rgba(255, 255, 255, 0.1);
+}
+.button-cont a {
+    display: inline-block;
+    border: 2px solid;
+    color: #FFFF;
+    padding: 10px 20px;
+}
+.button-cont a:first-child {
+    margin-right: 45px;
+}

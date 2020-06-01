@@ -1,0 +1,14 @@
+.typeMenuSection .cont .items .item {
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+.tabletatle{
+	color: #e54312;
+}
+span.st {
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}

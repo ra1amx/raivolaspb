@@ -1,0 +1,8 @@
+.room-price {
+    width: 100%;
+    clear: both;
+    font-size: 24px;
+}
+.room-price b {
+    margin-right: 50px;
+}

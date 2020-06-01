@@ -1,0 +1,12 @@
+div.action-name
+{
+    font-size: 24px;
+    color: #FFF;
+    text-transform: uppercase;
+    background: #E54312;
+    text-align: center;
+    display: table;
+    padding: 10px 20px;
+    margin: 0 auto;
+
+}

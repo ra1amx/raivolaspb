@@ -15,7 +15,6 @@ $start = false;
 $first = false;
 //echo '<pre>';
 //print_R($arResult);
-//*** Divan 01.06.2020 ***
 ?>
 
 <?foreach($arResult['ITEMS'] as $item):?>
@@ -47,7 +46,7 @@ $first = false;
 
 										<div class="line"></div>									
 									</div>
-									<span class='st'>Вес</span> <span  class='st'></span> <span  class='st'>Цена по карте*</span>
+									<span>Цена / <span>Кол-во</span></span>
 								</div>
 							</div>
 							<div class="desc">
@@ -68,7 +67,7 @@ $first = false;
 
 										<div class="line"></div>									
 									</div>
-								 <?if($item['PROPERTY_COUNT_VALUE']):?><span class='count st'>	<?=$item['PROPERTY_COUNT_VALUE']?></span><?endif?> <span class='st'><?//= number_format($item['PROPERTY_PRICE_VALUE'], 0, '', ' '); ?> </span> <span class='st'><?=number_format($item['PROPERTY_PRICE2_VALUE'], 0, '', ' ');?> р</span>
+									<span><?= number_format($item['PROPERTY_PRICE_VALUE'], 0, '', ' '); ?> р</span> <?if($item['PROPERTY_COUNT_VALUE']):?>/ <span class='count'>	<?=$item['PROPERTY_COUNT_VALUE']?></span><?endif?>
 								</div>
 							</div>
 							<div class="desc">
@@ -87,5 +86,5 @@ $first = false;
 	</div>
 
 <?endif?>
-информация не является публичной офертой и носит ознакомительный характер
+
 * Все цены указаны с учетом НДС

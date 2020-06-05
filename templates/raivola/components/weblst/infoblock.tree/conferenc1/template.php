@@ -13,12 +13,8 @@
 $this->setFrameMode(true);
 $start = false;
 $first = false;
-//echo '<pre>';
-//print_R($arResult);
-//*** Divan 01.06.2020 ***
-?>
-
-<?foreach($arResult['ITEMS'] as $item):?>
+//echo '<pre>';print_R($arResult);
+?><?foreach($arResult['ITEMS'] as $item):?>
 <?if($item['TYPE'] == "S" && $start == true):?>
 				</div>
 			</div>
@@ -27,16 +23,9 @@ $first = false;
 <?endif?>
 <?if($item['TYPE'] == "S"):?>
 	<!-- Раздел меню -->
-	<div class="typeMenuSection">
-<?$renderImage = CFile::ResizeImageGet($item['PICTURE']['ID'], array("height" => 320,"width" => 1320), BX_RESIZE_IMAGE_EXACT); ?>
-		<div class="heading">
-			<? if($renderImage['src']) { ?>
-				<img src="<?=$renderImage['src']?>" alt="" class="full">
-			<? } ?>
-		</div>
-
+	<div class="typeMenuSection cpnff">
 		<div class="cont">
-			<div class="miniWrap <?if($first == false):?>open<?$first=true;?><?endif?>">
+			<div class="miniWrap  <?if($first == false):?>open<?$first=true;?><?endif?>">
 				<h3 class="title"><?=$item['NAME']?></h3>
 						<div class="item tabletatle">
 							<div class="name flex flex-just_space">
@@ -47,7 +36,8 @@ $first = false;
 
 										<div class="line"></div>									
 									</div>
-									<span class='st'>Вес</span> <span  class='st'></span> <span  class='st'>Цена по карте*</span>
+									<span> до 4 часов</span>
+									<span>от 4 до 8 часов</span>
 								</div>
 							</div>
 							<div class="desc">
@@ -68,7 +58,8 @@ $first = false;
 
 										<div class="line"></div>									
 									</div>
-								 <?if($item['PROPERTY_COUNT_VALUE']):?><span class='count st'>	<?=$item['PROPERTY_COUNT_VALUE']?></span><?endif?> <span class='st'><?//= number_format($item['PROPERTY_PRICE_VALUE'], 0, '', ' '); ?> </span> <span class='st'><?=number_format($item['PROPERTY_PRICE2_VALUE'], 0, '', ' ');?> р</span>
+									<span><?= number_format($item['PROPERTY_PRICE_VALUE'], 0, '', ' '); ?> р</span> <?if($item['PROPERTY_COUNT_VALUE']):?>/ <span class='count'>	<?=$item['PROPERTY_COUNT_VALUE']?></span><?endif?>
+									<?if(!empty($item['PROPERTY_PRICE2_VALUE'])):?>	<span><?= number_format($item['PROPERTY_PRICE2_VALUE'], 0, '', ' '); ?> р</span> <?if($item['PROPERTY_COUNT_VALUE']):?>/ <span class='count'>	<?=$item['PROPERTY_COUNT_VALUE']?></span><?endif?><?endif?>
 								</div>
 							</div>
 							<div class="desc">
@@ -87,5 +78,5 @@ $first = false;
 	</div>
 
 <?endif?>
-информация не является публичной офертой и носит ознакомительный характер
+
 * Все цены указаны с учетом НДС
